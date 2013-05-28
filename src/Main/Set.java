@@ -9,7 +9,7 @@ import java.util.LinkedList;
  */
 /**
  *
- * @author jefferson
+ * @author jefferson,
  */
 public class Set {
     //
