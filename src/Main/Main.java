@@ -72,5 +72,6 @@ public class Main {
 //        System.out.println(Set.showSet(Set.junction(a3, b3)));
 //        System.out.println(Set.showSet(Set.diference(a3, b3)));
         System.out.println(Set.showSet(a3));
+//        System.out.println(Long.toBinaryString((long)1 << 62));
     }
 }
