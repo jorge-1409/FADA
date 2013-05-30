@@ -160,9 +160,13 @@ public class Set {
 
     public static String showSet(long a[]) {
         String str = "[";
-        for (int i = 0; i < a.length * 64; i++) {
-            if ((a[(i) / 64] & (long) 1 << i) != 0) {
-                str += i + ", ";
+        int n = 0;
+        for (int z = 0; z < a.length; z++) {
+            for (int i = 0; i < 64; i++) {
+                if ((a[z] & (long) 1 << i) != 0) {
+                    str += n + ", ";
+                }
+                n++;
             }
         }
         str += "]";
