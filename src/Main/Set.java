@@ -51,7 +51,14 @@ public class Set {
         }
         return false;
     }
-
+    
+    /**
+     * Determina si b  es subconjunto de a
+     * 
+     * @param a conjunto
+     * @param b subconjunto a determinar
+     * @return boolean
+     */
     public static boolean isSubSet(LinkedList<Integer> a, LinkedList<Integer> b) {
         return isEmpty(b) | a.containsAll(b);
     }
@@ -163,10 +170,12 @@ public class Set {
         int n = 0;
         for (int z = 0; z < a.length; z++) {
             for (int i = 0; i < 64; i++) {
-                if ((a[z] & (long) 1 << i) != 0) {
+                if ((a[z] & 1l << i) != 0) {
                     str += n + ", ";
+                    
                 }
-                n++;
+                n++; 
+                   
             }
         }
         str += "]";
